@@ -8,23 +8,24 @@
 
 [node name="Ocean" type="Node2D"]
 script = ExtResource("1_tiovm")
+metadata/_edit_vertical_guides_ = [-62.0]
+metadata/_edit_horizontal_guides_ = [-60.0]
 
 [node name="Water" type="Sprite2D" parent="."]
 texture = ExtResource("2_j38dg")
 centered = false
 
-[node name="Plane" type="Sprite2D" parent="."]
-position = Vector2(225, 425)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_nb2vx")
+[node name="Carrier" type="Sprite2D" parent="."]
+position = Vector2(717, 276.00003)
+rotation = -0.36651915
+scale = Vector2(1.4999999, 1.4999999)
+texture = ExtResource("5_n3fli")
 
 [node name="Helicopter" type="Sprite2D" parent="."]
-position = Vector2(187, 125)
-scale = Vector2(0.5, 0.5)
+position = Vector2(256, 263)
 texture = ExtResource("4_ihpsq")
 
-[node name="Carrier" type="Sprite2D" parent="."]
-position = Vector2(638, 284)
-rotation = -0.36651915
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("5_n3fli")
+[node name="Plane" type="Sprite2D" parent="."]
+position = Vector2(258, 391)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_nb2vx")
