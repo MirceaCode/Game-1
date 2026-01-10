@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://cnpsbaws0wdcf" path="res://Assets/Helicopter.png" id="4_ihpsq"]
 [ext_resource type="Texture2D" uid="uid://bcak7ufhik0x3" path="res://Assets/Carrier.png" id="5_n3fli"]
 
-[node name="Ocean" type="Node2D"]
+[node name="Ocean" type="Node2D" node_paths=PackedStringArray("_planeSprite", "_heliSprite")]
 script = ExtResource("1_tiovm")
+_planeSprite = NodePath("Plane")
+_heliSprite = NodePath("Helicopter")
 metadata/_edit_vertical_guides_ = [-62.0]
 metadata/_edit_horizontal_guides_ = [-60.0]
 
@@ -23,6 +25,7 @@ texture = ExtResource("5_n3fli")
 
 [node name="Helicopter" type="Sprite2D" parent="."]
 position = Vector2(256, 263)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_ihpsq")
 
 [node name="Plane" type="Sprite2D" parent="."]
